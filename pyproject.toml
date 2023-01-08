@@ -1,6 +1,5 @@
 [project]
 name = "search-lyrics"
-version = "0.0.1"
 description = "Search for lyric"
 authors = [
     {name = "Xavier Mitault", email = "xavier.mitault@epitech.eu"},
