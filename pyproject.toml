@@ -1,0 +1,17 @@
+[tool.pdm]
+
+[project]
+name = "search-lyrics"
+version = "0.0.1"
+description = "Search for lyrics"
+authors = [
+    {name = "Saverio976", email = "personnex976@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
