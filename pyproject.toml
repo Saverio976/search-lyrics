@@ -1,17 +1,20 @@
-[tool.pdm]
-
 [project]
 name = "search-lyrics"
 version = "0.0.1"
-description = "Search for lyrics"
+description = "Search for lyric"
 authors = [
-    {name = "Saverio976", email = "personnex976@gmail.com"},
+    {name = "Xavier Mitault", email = "xavier.mitault@epitech.eu"},
 ]
-dependencies = []
+dependencies = [
+    "wrap-genius>=1.8.0",
+]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
 
+
+[tool.pdm]
+
 [build-system]
-requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
