@@ -34,6 +34,8 @@ def search_lyrics(
     typing.List[genius.classes.song.Song]
     """
     if genius_access_token is None:
+        if verbose:
+            print("Searching GENIUS_ACCESS_TOKEN in ENV variable")
         genius_access_token = getenv("GENIUS_ACCESS_TOKEN")
         if genius_access_token is None:
             raise NoAccessTokenProvided()
