@@ -10,11 +10,32 @@ dependencies = [
 ]
 requires-python = ">=3.10"
 readme = "README.md"
+dynamic = ["version"]
 license = {text = "MIT"}
-
-
-[tool.pdm]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
 [build-system]
-requires = ["pdm-pep517>=1.0"]
+requires = [
+    "pdm-pep517>=1.0",
+    "setuptools>=45",
+    "setuptools_scm[toml]>=6.2"
+]
 build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm.version]
+source = "scm"
+write_to = "search_lyrics/__version__.py"
+write_template = '__version__ = "{}"'
+[tool.pdm.build]
+includes = [
+    "search_lyrics/",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
