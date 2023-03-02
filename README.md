@@ -6,6 +6,8 @@
 pip install search-lyrics
 ```
 
+- you need to provide a genius access token (https://genius.com/developers)
+
 ## Usage
 
 ### from cmd-line
